@@ -6,6 +6,7 @@ from selenium.webdriver.chrome.options import Options ;
 
 
 def main():
+    print("Converting Please Wait")
     try:
         if(not sys.argv[1] or not sys.argv[2] or not sys.argv[3]):
             raise;
@@ -20,16 +21,12 @@ def main():
 
     driver = webdriver.Chrome(options=chrome_options);
 
-    html_filename = 'todo.html'
     abs_path = 'file://' + os.path.abspath(sys.argv[1]);
     file_uri = abs_path.replace('\\', '/');
     driver.get(file_uri)
 
-    driver.maximize_window();
     driver.save_screenshot(sys.argv[3]);
 
-    print("Converting Please Wait")
-    time.sleep(5);
     driver.quit();
     print("Converted Successfully");
 

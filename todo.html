@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Todo wallpaper</title>
     <style>
       * {
@@ -10,21 +11,43 @@
         margin: 0;
         box-sizing: border-box;
       }
-      html {
-        background-color: #000;
-        color: #fff;
-      }
-      ul li::marker {
+      body {
+        width:100vw;
+        height:100vh;
+
+        background-image: url("./background/Anime-Boy-Studying-Laptop-Wallpaper.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         color: white;
+        font-weight: bolder;
+        overflow:hidden;
+      }
+      ul {
+        list-style-type: none;
+      }
+      .golden {
+        color: yellow;
+        font-weight: bolder;
       }
     </style>
   </head>
-  <body>
-    <section class="todo_body">
-      <ul class="todo_list">
-        <li>Make a CV</li>
-        <li>Do the AI Resume Project</li>
-      </ul>
-    </section>
+  <body style="width: 100%; height: 100vh">
+    <div style="margin: 4px">
+      <section>
+        <ul style="border: 2px solid white; padding: 16px">
+          <li class="golden" style="text-align: center">
+            قُلْ إِنَّ صَلَاتِى وَنُسُكِى وَمَحْيَاىَ وَمَمَاتِى لِلَّهِ رَبِّ
+            ٱلْعَـٰلَمِينَ
+          </li>
+          <li>Learn silence.</li>
+          <li class="golden">Simple gmail clone. Get Email and Send emails.</li>
+          <li class="golden">Make your imagination strong.</li>
+          <li class="golden">1000 from yusuf</li>
+          <li class="golden">Improvement mindset</li>
+          <li class="golden">Fire &#128293;</li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>
